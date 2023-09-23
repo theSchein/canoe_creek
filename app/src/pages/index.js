@@ -15,9 +15,9 @@ export default function Home() {
     <div>
     <Profile/>
     </div>
-    {/* <div>
+    <div>
       <Tokenbound/>
-      </div> */}
+      </div>
     </>
   )
 }

@@ -6,6 +6,8 @@ import { mainnet, baseGoerli } from 'wagmi/chains'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
+import Layout from '../components/layout'
+
 
 // 1. Get projectId
 const projectId = '2824e083d63be1672175b30c949cc831'
@@ -29,13 +31,14 @@ createWeb3Modal({ wagmiConfig, projectId, chains,
     '--w3m-font-family': 'Bold, comic-sans',
     '--w3m-accent-color': '#00000'} }
     )
-
-import '@/styles/globals.css'
+  
 
 export default function App({ Component, pageProps }) {
   return (
     <WagmiConfig config={wagmiConfig}>
-  <Component {...pageProps} />
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
   </WagmiConfig>
   )
 }

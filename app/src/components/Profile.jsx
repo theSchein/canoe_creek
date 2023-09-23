@@ -1,18 +1,18 @@
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 import { InjectedConnector } from 'wagmi/connectors/injected'
+import PullNfts from './PullNfts'
 
 export default function Profile() {
   const { address, isConnected } = useAccount()
   const { connect } = useConnect({
     connector: new InjectedConnector(),
   })
-  const { disconnect } = useDisconnect()
 
   if (isConnected)
     return (
       <div>
-        Connected to {address}
-        <button onClick={() => disconnect()}>Disconnect</button>
+      <PullNfts address = {address}/>
+
       </div>
     )
   return <button onClick={() => connect()}>Connect Wallet</button>

@@ -1,5 +1,5 @@
 import ConnectButton from "@/components/wallet"
-import Profile from "@/components/profile"
+import Profile from "@/components/Profile"
 
 export default function Home() {
   return (
@@ -8,9 +8,10 @@ export default function Home() {
     <p>Canoe Creek Dapp</p>
     <p>Sign in with WALLET CONNECT</p>
     </div>
+    <div>
     <ConnectButton />
-    <Profile />
-
+    </div>
+    <Profile/>
     </>
   )
 }

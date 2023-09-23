@@ -1,6 +1,5 @@
 import ConnectButton from "../components/wallet"
 import Profile from "../components/Profile"
-import Tokenbound from "../components/Tokenbound"
 
 export default function Home() {
   return (
@@ -15,9 +14,7 @@ export default function Home() {
     <div>
     <Profile/>
     </div>
-    <div>
-      <Tokenbound/>
-      </div>
+
     </>
   )
 }

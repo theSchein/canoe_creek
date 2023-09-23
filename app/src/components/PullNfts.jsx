@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import QuickNode from '@quicknode/sdk';
+import ImageDisplay from './ImageDisplay';
+import Tokenbound from './Tokenbound';
 
 function PullNfts({ address }) {
   const [data, setData] = useState(null);
@@ -28,7 +30,8 @@ function PullNfts({ address }) {
       {data && (
         <div>
           <h3>Results:</h3>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
+          <ImageDisplay data={data} />
+          <Tokenbound data={data} />
         </div>
       )}
     </div>

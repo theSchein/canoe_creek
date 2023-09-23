@@ -1,5 +1,6 @@
 import { HardhatUserConfig } from 'hardhat/config';
 import '@nomicfoundation/hardhat-toolbox';
+import "@nomicfoundation/hardhat-verify";
 
 require('dotenv').config();
 
@@ -26,6 +27,11 @@ const config: HardhatUserConfig = {
       accounts: [process.env.WALLET_KEY as string],
       gasPrice: 1000000000,
     },
+  },
+  etherscan: {
+    // Your API key for Etherscan
+    // Obtain one at https://etherscan.io/
+    apiKey: "https://api-goerli.basescan.org/api"
   },
   defaultNetwork: 'hardhat',
 };

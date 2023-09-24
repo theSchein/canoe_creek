@@ -2,13 +2,13 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import DiamondIcon from "@mui/icons-material/Diamond";
+import LandscapeIcon from '@mui/icons-material/Landscape';
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-const pages = ["About", "Mint"];
+const pages = ["Mint"];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -22,12 +22,12 @@ function Navbar() {
     return (
         <AppBar
             position="static"
-            className="bg-background text-primary font-heading shadow-none border-none w-full"
-            style={{ background: '#1E2022' }}
+            className="bg-secondary text-primary font-heading shadow-none border-none w-full"
+            style={{ background: '#D0E7D2' }}
         >
             <Container maxWidth="xl">
                 <Toolbar disableGutters className="bg-quaternary">
-                    <DiamondIcon
+                    <LandscapeIcon
                         sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
                     />
                     <Typography
@@ -39,10 +39,10 @@ function Navbar() {
                             mr: 2,
                             display: { xs: "none", md: "flex" },
                             flexGrow: 1,
-                            fontFamily: "Alegreya Sans",
+                            fontFamily: "Open Sans",
                             fontWeight: 700,
                             letterSpacing: ".3rem",
-                            color: "inherit",
+                            color: "#618264",
                             textDecoration: "none",
                         }}
                     >
@@ -75,7 +75,7 @@ function Navbar() {
                             }}
                         ></Menu>
                     </Box>
-                    <DiamondIcon
+                    <LandscapeIcon
                         sx={{ display: { xs: "flex", md: "none" }, mr: 1 }}
                     />
                     <Typography
@@ -87,10 +87,10 @@ function Navbar() {
                             mr: 2,
                             display: { xs: "flex", md: "none" },
                             flexGrow: 1,
-                            fontFamily: "Alegra Sans",
+                            fontFamily: "Open Sans",
                             fontWeight: 700,
                             letterSpacing: ".3rem",
-                            color: "inherit",
+                            color: "#618264",
                             textDecoration: "none",
                         }}
                     ></Typography>
@@ -100,7 +100,7 @@ function Navbar() {
                                 href={`/${page}`}
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: "white", display: "block" }}
+                                sx={{ my: 2, color: '#618264', display: "block" }}
                             >
                                 {page}
                             </Button>

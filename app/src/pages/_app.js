@@ -8,6 +8,7 @@ import { InjectedConnector } from 'wagmi/connectors/injected'
 import { WalletConnectConnector } from 'wagmi/connectors/walletConnect'
 import Layout from '../components/layout'
 
+import './styles/global.css';
 
 // 1. Get projectId
 const projectId = '2824e083d63be1672175b30c949cc831'
@@ -27,9 +28,10 @@ const wagmiConfig = createConfig({
 
 // 3. Create modal
 createWeb3Modal({ wagmiConfig, projectId, chains,
+  themeMode: 'dark',
   themeVariables: {
     '--w3m-font-family': 'Bold, comic-sans',
-    '--w3m-accent-color': '#00000'} }
+    '--w3m-accent-color': '#B0D9B1'} }
     )
   
 

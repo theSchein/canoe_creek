@@ -15,15 +15,13 @@ function NounsTile() {
     <div className="flex flex-col items-center space-y-4 p-6 border-2 border-gray-300 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 content-center">
       <div className="w-48 h-48 relative rounded-full overflow-hidden shadow-inner">
         <Image
-          src="/nouns_ipfs/output_nouns_88.png"
-          alt="Nouns Tile"
+          src="/hokusai_ipfs/cranes.png"
+          alt="Katsushika Hokusai Tile"
           width={200}
           height={200}
-          href="https://nouns.wtf/"
-
         />
       </div>
-      <Link href='https://goerli.basescan.org/tx/0x5be3ab42d976f2401c02fdcb070a5c379cf507a5b01f2bed5dde46ac959be1e7#eventlog' ><h1 className=" font-bold content-center text-lg">Nouns</h1></Link>
+      <Link href='https://goerli.basescan.org/tx/0x5be3ab42d976f2401c02fdcb070a5c379cf507a5b01f2bed5dde46ac959be1e7#eventlog' ><h1 className=" font-bold content-center text-lg">Katsushika Hokusai</h1></Link>
       
       <input
         type="text"
@@ -39,7 +37,7 @@ function NounsTile() {
         Submit
         
       </button>
-      <TextModal open={open} handleClose={handleClose} prompt={text} cid='QmedE4GrswDqYfxYE4inc6J94RbeGrRuoBaMjCpwsmZbyc'/>
+      <TextModal open={open} handleClose={handleClose} prompt={text} cid='QmUjF136Rd8Scqoo3oQb9SPVypF13iZnN58rfjqBEEhC1h'/>
     </div>
   );
 }

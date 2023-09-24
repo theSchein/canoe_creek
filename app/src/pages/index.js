@@ -1,7 +1,8 @@
 import ConnectButton from "../components/wallet";
 import Profile from "../components/Profile";
-import ImageTile from "../components/ImageTile";
 import NounsTile from "../components/NounsTile";
+import HokusaiTile from "../components/HokusaiTile";
+import MonetTile from "../components/MonetTile";
 
 export default function Home() {
   return (
@@ -21,8 +22,8 @@ export default function Home() {
 
       <div className="flex justify-center space-x-4 mb-8">
         <NounsTile  />
-        <ImageTile img="/hokusai_ipfs/fishin.png" />
-        <ImageTile img="/monet_ipfs/1.png" />
+        <HokusaiTile  />
+        <MonetTile />
       </div>
     </div>
   );

@@ -1,40 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Canoe Creek
 
-## Getting Started
+This is a tech demo app exploring how NFTs can be used by creators to generate value by being used in AI text-to-image models. 
 
-First, run the development server:
+## Concept 
+![image](https://github.com/theSchein/canoe_creek/assets/4759807/ace90d3d-469a-40a2-ac87-4d40860e1d17)
+
+Creater mints thier artwork as NFTs, the NFT are then fetched by the app. Photos and and ERC-6551 tokenbound addresses are collected and stored on IPFS
+
+User selects from the collections on the app which to use in thier LoRA text-to-image model and creates a prompt in the style of that collection
+
+Prompt command along with a fee is sent to Lilypad to run the AI model on Bacalhua. Excess of the fee not used on computation is distributed even to the tokenbound NFTs
+
+User gets an image output from the model and the NFT collects a royalty
+
+## Status
+- Creators can mint NFTs
+- Any NFT can have its own wallet looked up
+- NFT Data is fetched from the Creator's wallet but not yet processed
+- Users cna create prompts but the app is not yet connected to Lilypad
+- Payments processing has yet to be implemented
+
+
+
+## Running the App
+
+Install the packages and start the local server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

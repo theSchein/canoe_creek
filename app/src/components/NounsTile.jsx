@@ -39,7 +39,7 @@ function NounsTile() {
         Submit
         
       </button>
-      <TextModal open={open} handleClose={handleClose} prompt={text} cid='QmedE4GrswDqYfxYE4inc6J94RbeGrRuoBaMjCpwsmZbyc'/>
+      <TextModal open={open} handleClose={handleClose} prompt={text} cid='QmedE4GrswDqYfxYE4inc6J94RbeGrRuoBaMjCpwsmZbyc' address={'0x09167A969f807C83b7A5948020e4c8E885B42c0f'}/>
     </div>
   );
 }

@@ -8,7 +8,7 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 
-const pages = ["Mint"];
+const pages = ["Mint", "NFTWallet"];
 
 function Navbar() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Modal, Box, Typography } from '@mui/material';
 
-function TextModal({ open, handleClose, prompt, cid }) {
+function TextModal({ open, handleClose, prompt, cid, address }) {
   const yourText = `
     
 
@@ -35,6 +35,7 @@ function TextModal({ open, handleClose, prompt, cid }) {
         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
           {yourText}
         </Typography>
+        <h3>Fee to be sent to token bound account: ${address}</h3>
       </Box>
     </Modal>
   );

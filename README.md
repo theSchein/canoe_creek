@@ -14,6 +14,10 @@ Prompt command along with a fee is sent to Lilypad to run the AI model on Bacalh
 User gets an image output from the model and the NFT collects a royalty
 
 ## Status
+
+![Screenshot from 2023-09-24 08-12-39](https://github.com/theSchein/canoe_creek/assets/4759807/13a20fee-44e5-475f-90e5-a7c7d38755f4)
+
+
 - Creators can mint NFTs
 - Any NFT can have its own wallet looked up
 - NFT Data is fetched from the Creator's wallet but not yet processed

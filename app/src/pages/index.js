@@ -16,14 +16,16 @@ export default function Home() {
         <ConnectButton />
       </div>
 
-      <div className="mb-8">
-        <Profile />
-      </div>
+
 
       <div className="flex justify-center space-x-4 mb-8">
         <NounsTile  />
         <HokusaiTile  />
         <MonetTile />
+      </div>
+
+      <div className="justify-center">
+        <Profile />
       </div>
     </div>
   );

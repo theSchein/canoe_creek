@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="bg-primary text-quaternary font-body min-h-screen p-8">
       <div className="text-center mb-8">
-        <p className="text-4xl mb-2">Canoe Creek Dapp</p>
-        <p className="text-xl">Sign in with WALLET CONNECT</p>
+        <p className="text-4xl mb-2">Canoe Creek</p>
+        <p className="text-xl">Your NFTs should generate an income from AI Art</p>
       </div>
 
       <div className="text-center mb-8">
